@@ -4,13 +4,49 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+  <title>Tamzyn VR Scene</title>
+  <script src="https://aframe.io/releases/1.5.0/aframe.min.js"></script>
+  <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script>
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <a-scene>
+    <a-entity environment="preset: forest; dressingAmount:250;skyColor:#FFA9A3;"></a-entity>
+    <!-- strt of house -->
+    <a-cylinder id="floor" position="0 0 0" radius="7.5" color="green" height="0.1"></a-cylinder>
+    <a-box id="wall1_TahaHinengaro" position="0  1.473  4.907" rotation="0  0  0" scale=" 10  3  0.2 "
+      src="images/Wallpaper.jpg"></a-box>
+    <a-box id="wall2_ TahaTinana" position="  0  1.473 -4.907" rotation="0  0  0" scale=" 10  3  0.2 "
+      src="images/Wallpaper.jpg"></a-box>
+    <a-box id="wall3_Taha Whānau" position=" 5.049  1.454  -0.008" rotation="0  -90  0" scale=" 10  3  0.2 "
+      src="images/Wallpaper.jpg" "></a-box>
+  <a-box id=" wall4_ Taha Wairua " position=" -5.049 1.454 -0.008" rotation="0  -90  0" scale=" 10  3  0.2 "
+      scr="images/Wallpaper.jpg" "></a-box>
+  <a-cylinder id=" triangle_front" segments-radial="3" position="0  3.874 4.907" rotation="-90  0  0"
+      scale="5.774  0.2  1.8" color="pink"></a-cylinder>
+      <a-cylinder id="triangle_back" segments-radial="3" position="0  3.874 -4.907" rotation="-90  0  0"
+        scale="5.774  0.2  1.8" color="orange"></a-cylinder>
+      <a-box id="roof_right" position="2.580  4.328  0" rotation="28.433  90  0" scale="10.931 0.20  6.110"
+        color="silver"></a-box>
+      <a-box id="roof_left" position="-2.599  4.3321  -0.017" rotation="28.433  -90  0" scale="10.931 0.20   6.130"
+        color="silver"></a-box> <!--end of house-->
+ <!-- artwork strt -->
+    <a-plane id="art1" src="images/FutbolPlayer.jpg" scale="2 2 0.05" rotation="0 0 0" position="-0.173 1.602 -4.792"></a-plane>
+    <a-plane id="art2" src="images/spaniel.jpg" scale="2 2 0.05" rotation="0 -90 0" position="4.874 1.629 -0.149"></a-plane>
+    <a-plane id="art3" src="images/cute_dog.jpg" scale="2 2 0.05" rotation="0 -180 0" position="-0.243 1.462 4.751"></a-plane>
+    <a-plane id="art4" src="images/snowy_dog.jpg" scale="2 2 0.05" rotation="0 90 0" position="-4.012 1.606 -0.264"></a-plane>
+  
+ <!-- 3d object-->
+  <a-obj-model id="3dModel1" src="images/tinker.obj" mtl=" " position="0 0 0" rotation="-90 0 0" scale=".03 .03 .03 "></a-obj-model>
+
+
+
+
+
+
+
+
+  </a-scene>
 </body>
 
 </html>
